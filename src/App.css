@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+body {
+  font: normal 14px 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  letter-spacing: 0;
+  padding-bottom: 20px!important;
+  background: rgba(0, 0, 0, 0.71);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul, li{
+  display: block;
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div, p, span, button, form, input, a {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  letter-spacing: 0.02em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p{
+  margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+
+h1, h2, h3, h4, h5, h6{
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0;
+  text-shadow: black -3px -1px 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1{
+  font-size: 45px;
+  color: #fff;
+}
+
+h2{
+  font-size: 27px;
+
+}
+
+h3{
+  font-size: 25px;
+
+}
+h4{
+  font-size: 25px;
+
+}
+
+h5{
+  font-size: 25px;
+
+}
+
+h6{
+  font-size: 25px;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+a:hover {
+  transition: ease 0.5s;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-btn a:hover{
+  background-color: transparent;
+  color: #fff;
+}
+
+.btn-secondary:focus {
+  box-shadow: none!important;
+}
+
+/* ---------- Первый экран ---------- */
+
+
+.nav__items{
+  width: 100%;
+}
+
+header{
+  padding: 20px 0;
+}
+
+.cooper__img, .cooper__btn{
+  display: block;
+}
+#loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(240, 240, 240, 0.91);
+  overflow: hidden;
+  display: none;
+}
+
+#loader img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  margin-left: -25px;
+  top: 50%;
+  margin-top: -25px;
+}
+
+.cooper__img{
+  max-width: 300px;
+  max-height: 300px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.cooper__btns{
+  max-width: 300px;
 }
